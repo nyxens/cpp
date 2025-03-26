@@ -45,7 +45,7 @@ int searchMin(Node* root){
     }
     return root->data;
 }
-Node* insert(int x, Node* root){
+Node* insert(Node* root,int x){
     Node* node = new Node();
     node->data = x;
     node->svalue = 1;
@@ -62,16 +62,16 @@ Node* deletetion(Node* root){
 }
 int main(){
     Node* root = nullptr;
-    root = insert(10,root);
-    root = insert(9,root);
-    root = insert(8,root);
-    root = insert(7,root);
-    root = insert(6,root);
-    root = insert(5,root);
-    root = insert(4,root);
-    root = insert(3,root);
-    root = insert(2,root);
-    root = insert(1,root);
+    root = insert(root,10);
+    root = insert(root,9);
+    root = insert(root,8);
+    root = insert(root,7);
+    root = insert(root,6);
+    root = insert(root,5);
+    root = insert(root,4);
+    root = insert(root,3);
+    root = insert(root,2);
+    root = insert(root,1);
     cout << "Inorder of leftist heap: ";
     inorder(root);
     cout << endl;
