@@ -48,7 +48,7 @@ void deleteMax(){
     heapifyDown(0);
 }
 void print(){
-    for (int i=0;i<heapSize;i++){
+    for(int i=0;i<heapSize;i++){
         cout << heap[i] << " ";
     }
     cout << endl;
